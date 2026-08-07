@@ -52,7 +52,7 @@ RUN addgroup --system --gid 1001 nodejs && \
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV HOSTNAME="0.0.0.0"
-ENV PORT=3000
+ENV PORT=80
 
 # Copiar arquivos necessários do builder
 COPY --from=builder /app/package.json ./package.json
@@ -69,11 +69,11 @@ RUN chown -R nextjs:nodejs /app
 USER nextjs
 
 # Expor a porta da aplicação
-EXPOSE 3000
+EXPOSE 80
 
 # Health check para o EasyPanel monitorar o container
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1
+  CMD wget --no-verbose --tries=1 --spider http://localhost:80/ || exit 1
 
 # Iniciar a aplicação
-CMD ["npx", "vinext", "start"]
+CMD ["node", "node_modules/.bin/vinext", "start"]

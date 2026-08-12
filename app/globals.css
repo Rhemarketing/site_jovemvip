@@ -287,8 +287,13 @@ a {
 }
 
 @keyframes scroll-strip {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-25%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-25%);
+  }
 }
 
 .arena-intro {
@@ -940,8 +945,19 @@ footer {
   }
 
   .hero {
-    min-height: auto;
-    padding: 128px 20px 74px;
+    height: 50vh;
+    min-height: 50vh;
+    padding: 0;
+  }
+
+  .energy-strip {
+    padding: 10px 0;
+  }
+
+  .energy-items {
+    gap: 13px;
+    padding-right: 13px;
+    font-size: 9px;
   }
 
   .hero h1 {
@@ -1065,15 +1081,16 @@ footer {
   }
 
   .mobile-reserve {
+    width: 55%;
     position: fixed;
     z-index: 30;
     left: 14px;
     right: 14px;
-    bottom: 12px;
+    bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 54px;
+    min-height: 50px;
     padding: 0 20px;
     border: 1px solid rgba(7, 26, 20, .18);
     border-radius: 999px;

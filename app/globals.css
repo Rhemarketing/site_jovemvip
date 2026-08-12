@@ -265,19 +265,30 @@ a {
   margin: -10px 0 -10px 0;
 }
 
-.energy-strip div {
+.energy-track {
   display: flex;
   width: max-content;
+  animation: scroll-strip 15s linear infinite;
+}
+
+.energy-items {
+  display: flex;
   align-items: center;
   gap: 26px;
+  padding-right: 26px;
   font-size: 18px;
   font-weight: 900;
   letter-spacing: .03em;
   text-transform: uppercase;
 }
 
-.energy-strip i {
+.energy-items i {
   font-style: normal;
+}
+
+@keyframes scroll-strip {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
 }
 
 .arena-intro {

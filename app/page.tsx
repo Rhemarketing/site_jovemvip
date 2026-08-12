@@ -22,8 +22,19 @@ export default function Home() {
       </section>
 
       <section className="energy-strip" aria-label="Serviços">
-        <div>
-          <span>Futebol</span><i>✦</i><span>Campeonatos</span><i>✦</i><span>Escolinha</span><i>✦</i><span>Aniversários</span><i>✦</i><span>Futebol</span><i>✦</i>
+        <div className="energy-track">
+          <div className="energy-items">
+            <span>Futebol</span><i>✦</i><span>Campeonatos</span><i>✦</i><span>Escolinha</span><i>✦</i><span>Aniversários</span><i>✦</i><span>Futebol</span><i>✦</i>
+          </div>
+          <div className="energy-items" aria-hidden="true">
+            <span>Futebol</span><i>✦</i><span>Campeonatos</span><i>✦</i><span>Escolinha</span><i>✦</i><span>Aniversários</span><i>✦</i><span>Futebol</span><i>✦</i>
+          </div>
+          <div className="energy-items" aria-hidden="true">
+            <span>Futebol</span><i>✦</i><span>Campeonatos</span><i>✦</i><span>Escolinha</span><i>✦</i><span>Aniversários</span><i>✦</i><span>Futebol</span><i>✦</i>
+          </div>
+          <div className="energy-items" aria-hidden="true">
+            <span>Futebol</span><i>✦</i><span>Campeonatos</span><i>✦</i><span>Escolinha</span><i>✦</i><span>Aniversários</span><i>✦</i><span>Futebol</span><i>✦</i>
+          </div>
         </div>
       </section>
 

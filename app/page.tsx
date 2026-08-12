@@ -16,46 +16,9 @@ export default function Home() {
       </header>
 
       <section className="hero" id="inicio">
-        <div className="hero-glow" aria-hidden="true" />
-        <div className="hero-copy">
-          <p className="eyebrow"><span /> Arena coberta em Ituiutaba</p>
-          <h1>Seu futebol merece um <em>palco à altura.</em></h1>
-          <p className="hero-description">
-            Estrutura completa, gramado sintético de última geração e a energia certa
-            para jogar, competir e viver o futebol de verdade.
-          </p>
-          <div className="hero-actions">
-            <a className="button button-primary" href="https://contate.me/arenajovemvip" target="_blank" rel="noreferrer">
-              Quero reservar <span aria-hidden="true">↗</span>
-            </a>
-            <a className="button button-ghost" href="#escolinha">Conhecer a escolinha</a>
-          </div>
-          <div className="hero-proof" aria-label="Diferenciais da Arena Jovem VIP">
-            <div><strong>24h</strong><span>Segurança monitorada</span></div>
-            <div><strong>100%</strong><span>Quadra coberta</span></div>
-            <div><strong>VIP</strong><span>Experiência em campo</span></div>
-          </div>
-        </div>
-
-        <div className="hero-media">
-          <div className="video-shell">
-            <video autoPlay muted loop playsInline poster="/assets/arena-reel-poster.jpg" aria-label="Momentos na Arena Jovem VIP">
-              <source src="/assets/arena-reel.mp4" type="video/mp4" />
-            </video>
-            <span className="video-label"><i /> Ao vivo na arena</span>
-          </div>
-          <div className="floating-card floating-card-top">
-            <span className="floating-icon" aria-hidden="true">⚽</span>
-            <div><small>Próximo jogo</small><strong>O seu.</strong></div>
-          </div>
-          <div className="floating-card floating-card-bottom">
-            <strong>Jogue. Vibra. Repita.</strong>
-          </div>
-        </div>
-
-        <a className="scroll-cue" href="#arena" aria-label="Ir para a próxima seção">
-          <span>Explore</span><i aria-hidden="true">↓</i>
-        </a>
+        <video className="hero-video-bg" autoPlay muted loop playsInline>
+          <source src="/assets/video-hero.mp4" type="video/mp4" />
+        </video>
       </section>
 
       <section className="energy-strip" aria-label="Serviços">

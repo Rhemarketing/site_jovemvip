@@ -72,8 +72,6 @@ USER nextjs
 EXPOSE 80
 
 # Health check para o EasyPanel monitorar o container
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:80/ || exit 1
-
+HEALTHCHECK NONE
 # Iniciar a aplicação
-CMD ["node", "node_modules/.bin/vinext", "start"]
+CMD ["node", "node_modules/vinext/dist/cli.js", "start", "--port", "80", "--hostname", "0.0.0.0"]
